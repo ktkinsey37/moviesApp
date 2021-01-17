@@ -1,0 +1,27 @@
+console.log("Let’s get ready to party with jQuery!")
+
+
+$( "article" ).find( "img" ).addClass( "image-center" );
+
+
+$( "p" ).last().remove();
+
+
+  $( "#title" ).css( "fontSize", function(){
+  let number = Math.floor(Math.random() * Math.floor(100));
+  return number + "px"
+ });
+
+
+ $('ol').append('<li>hiiiii</li>')
+
+
+ $('aside').empty().append('<p>sorry we made the list!</p>')
+
+
+ $( "body").css("background-color", `rgb( ${$('input').val()} , ${$('input').eq(1).val()} , ${$('input').eq(2).val()}`)
+
+
+ $( "img").on(click, function(){
+    $(this).remove()
+})
